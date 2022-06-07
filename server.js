@@ -7,8 +7,11 @@ const contactsRouter = require("./routes/contactsRouter");
 const app = express();
 const PORT = 5000;
 
+app.use(express.json());
+
+// Create routes
 app.get("/", (req, res) => {
-  res.status(200).json("Welcome to the Contact App.");
+  res.status(200).json("Welcome to the Contact API.");
 });
 
 app.use("/contacts", contactsRouter);

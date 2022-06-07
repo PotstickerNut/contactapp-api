@@ -13,14 +13,10 @@ router.get("/", async (req, res) => {
   }
 });
 
-// Create contacts
-router.post("/", async (req, res) => {
-  const contactData = req.body;
-});
-
 //Create contacts
 router.post("/", async (req, res) => {
   const contactData = req.body;
+  console.log(contactData);
 
   try {
     const contact = await ContactModel.create(contactData);
@@ -58,7 +54,7 @@ router.put("/:id", async (req, res) => {
   }
 });
 
-// Delete a contact
+// Delete a contact by ID
 router.delete("/:id", async (req, res) => {
   const id = req.params.id;
 

@@ -5,19 +5,23 @@ const contactSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+
   email: {
     type: String,
     required: false,
   },
+
   phone: {
     type: String,
     required: true,
   },
+
   contactType: {
-    typed: String,
+    type: String,
     required: true,
     default: "Personal",
   },
+
   created_at: {
     type: Date,
     default: Date.now(),
