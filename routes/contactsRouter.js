@@ -16,7 +16,6 @@ router.get("/", async (req, res) => {
 //Create contacts
 router.post("/", async (req, res) => {
   const contactData = req.body;
-  console.log(contactData);
 
   try {
     const contact = await ContactModel.create(contactData);
