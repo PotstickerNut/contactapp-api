@@ -3,5 +3,24 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.3.5"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "contactapp-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PotstickerNut/contactapp-api.git"
+  },
+  "keywords": [],
+  "author": "Janette Campbell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PotstickerNut/contactapp-api/issues"
+  },
+  "homepage": "https://github.com/PotstickerNut/contactapp-api#readme",
+  "description": ""
 }
