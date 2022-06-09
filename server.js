@@ -2,6 +2,7 @@ const express = require("express");
 require("dotenv").config();
 
 const mongoConfig = require("./config/mongoConfig");
+const usersRouter = require("./routes/usersRouter");
 const contactsRouter = require("./routes/contactsRouter");
 
 const app = express();
@@ -13,6 +14,8 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.status(200).json("Welcome to the Contact API.");
 });
+
+app.use("/users", usersRouter);
 
 app.use("/contacts", contactsRouter);
 
