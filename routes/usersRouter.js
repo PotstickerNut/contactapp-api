@@ -40,6 +40,7 @@ router.post(
       const user = await UserModel.create(userData);
       res.status(201).json(user);
     } catch (error) {
+      console.error(error);
       res.status(400).json("Bad request");
     }
   }

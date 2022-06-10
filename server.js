@@ -6,6 +6,7 @@ const helmet = require("helmet");
 const mongoConfig = require("./config/mongoConfig");
 const usersRouter = require("./routes/usersRouter");
 const contactsRouter = require("./routes/contactsRouter");
+const authRouter = require("./routes/");
 
 const app = express();
 const PORT = 5000;
