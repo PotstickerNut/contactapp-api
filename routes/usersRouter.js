@@ -84,7 +84,7 @@ router.delete("/:id", async (req, res) => {
 
   try {
     const user = await UserModel.findByIdAndDelete(id);
-    res.status(200).json("Contact was deleted.");
+    res.status(200).json("User was deleted.");
   } catch (error) {
     console.error(error);
   }
